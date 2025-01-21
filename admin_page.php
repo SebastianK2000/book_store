@@ -33,7 +33,7 @@ if(!isset($admin_id)) {
 <!-- admin dashboard section start -->
 <section class="dashboard">
 
-    <h1 class="heading">dashboard</h1>
+    <h1 class="title">dashboard</h1>
     <div class="box-container">
         <div class="box">
             <?php
@@ -48,7 +48,7 @@ if(!isset($admin_id)) {
                     };
                 };
             ?>
-            <h3><?php echo $total_pendings; ?></h3>
+            <h3>$<?php echo $total_pendings; ?>/-</h3>
             <p>total pendings</p>
         </div>
 
@@ -65,15 +65,15 @@ if(!isset($admin_id)) {
                 };
             };
             ?>
-            <h3><?php echo $total_completed; ?></h3>
+            <h3>$<?php echo $total_completed; ?>/-</h3>
             <p>completed payments</p>
         </div>
 
         <div class="box">
             <?php
-                $selct_orders = mysqli_query($conn, "SELECT * FROM `orders`")
+                $select_orders = mysqli_query($conn, "SELECT * FROM `orders`")
                 or die('query failed');
-                $number_of_orders = mysqli_num_rows($selct_orders);
+                $number_of_orders = mysqli_num_rows($select_orders);
             ?>
             <h3><?php echo $number_of_orders; ?></h3>
             <p>order placed</p>
@@ -81,9 +81,9 @@ if(!isset($admin_id)) {
 
         <div class="box">
             <?php
-            $selct_products = mysqli_query($conn, "SELECT * FROM `products`")
+            $select_products = mysqli_query($conn, "SELECT * FROM `products`")
             or die('query failed');
-            $number_of_products = mysqli_num_rows($selct_products);
+            $number_of_products = mysqli_num_rows($select_products);
             ?>
             <h3><?php echo $number_of_products; ?></h3>
             <p>products added</p>
@@ -91,9 +91,9 @@ if(!isset($admin_id)) {
 
         <div class="box">
             <?php
-            $selct_users = mysqli_query($conn, "SELECT * FROM `users` 
+            $select_users = mysqli_query($conn, "SELECT * FROM `users` 
             WHERE user_type = 'user'") or die('query failed');
-            $number_of_users = mysqli_num_rows($selct_users);
+            $number_of_users = mysqli_num_rows($select_users);
             ?>
             <h3><?php echo $number_of_users; ?></h3>
             <p>normal users</p>
@@ -101,9 +101,9 @@ if(!isset($admin_id)) {
 
         <div class="box">
             <?php
-            $selct_admins = mysqli_query($conn, "SELECT * FROM `admins` 
+            $select_admins = mysqli_query($conn, "SELECT * FROM `users` 
             WHERE user_type = 'admin'") or die('query failed');
-            $number_of_admins = mysqli_num_rows($selct_admins);
+            $number_of_admins = mysqli_num_rows($select_admins);
             ?>
             <h3><?php echo $number_of_admins; ?></h3>
             <p>admin users</p>
@@ -111,9 +111,9 @@ if(!isset($admin_id)) {
 
         <div class="box">
             <?php
-            $selct_account = mysqli_query($conn, "SELECT * FROM `users`")
+            $select_account = mysqli_query($conn, "SELECT * FROM `users`")
             or die('query failed');
-            $number_of_account = mysqli_num_rows($selct_account);
+            $number_of_account = mysqli_num_rows($select_account);
             ?>
             <h3><?php echo $number_of_account; ?></h3>
             <p>total users</p>
@@ -121,9 +121,9 @@ if(!isset($admin_id)) {
 
         <div class="box">
             <?php
-            $selct_users = mysqli_query($conn, "SELECT * FROM `users` 
+            $select_users = mysqli_query($conn, "SELECT * FROM `users` 
             WHERE user_type = 'user'") or die('query failed');
-            $number_of_users = mysqli_num_rows($selct_users);
+            $number_of_users = mysqli_num_rows($select_users);
             ?>
             <h3><?php echo $number_of_users; ?></h3>
             <p>normal users</p>
@@ -131,9 +131,9 @@ if(!isset($admin_id)) {
 
         <div class="box">
             <?php
-            $selct_messages = mysqli_query($conn, "SELECT * FROM `message`")
+            $select_messages = mysqli_query($conn, "SELECT * FROM `message`")
             or die('query failed');
-            $number_of_messages = mysqli_num_rows($selct_messages);
+            $number_of_messages = mysqli_num_rows($select_messages);
             ?>
             <h3><?php echo $number_of_messages; ?></h3>
             <p>new messages</p>
