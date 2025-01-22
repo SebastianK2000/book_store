@@ -25,6 +25,11 @@ if(isset($message)) {
             <a href="admin_contacts.php">Messages</a>
         </nav>
 
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+        </div>
+
         <div class="account-box">
             <p>username : <span><?php echo $_SESSION['admin_name']; ?></span></p>
             <p>email : <span><?php echo $_SESSION['admin_email']; ?></span></p>
@@ -33,5 +38,4 @@ if(isset($message)) {
         </div>
 
     </div>
-
 </header>

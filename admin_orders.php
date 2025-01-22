@@ -42,7 +42,7 @@ if(isset($_GET['delete'])) {
 </head>
 <body>
 
-<?php include 'admin_header.php';?>
+<?php include 'admin_header.php'; ?>
 
 <section class="orders">
 
@@ -93,6 +93,6 @@ if(isset($_GET['delete'])) {
 </section>
 
 <!-- JS file -->
-<script src="js/admin_script.js"></script>
+<script src="./js/admin_script.js"></script>
 </body>
 </html>

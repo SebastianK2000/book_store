@@ -28,7 +28,7 @@ if(!isset($admin_id)) {
 </head>
 <body>
 
-<?php include 'admin_header.php';?>
+<?php include 'admin_header.php'; ?>
 
 <!-- admin dashboard section start -->
 <section class="dashboard">
@@ -145,6 +145,6 @@ if(!isset($admin_id)) {
 
 
 <!-- JS file -->
-<script src="js/admin_script.js"></script>
+<script src="./js/admin_script.js"></script>
 </body>
 </html>
