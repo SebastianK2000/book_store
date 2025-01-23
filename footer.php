@@ -22,7 +22,7 @@
             <h3>contact info</h3>
             <p> <i class="fas fa-phone"></i> +48 123-456-789 </p>
             <p> <i class="fas fa-phone"></i> +48 987-654-321 </p>
-            <p> <i class="fas fa-envelope"></i> sebastian.kosciolek2000@gmail.com </p>
+            <p> <i class="fas fa-envelope"></i> sebastian@gmail.com </p>
             <p> <i class="fas fa-map-marker-alt"></i> Cracow, Poland - 30-001 </p>
         </div>
 

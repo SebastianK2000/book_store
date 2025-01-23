@@ -118,30 +118,42 @@ if(isset($_POST['update_product'])){
 <!-- show products  -->
 
 <section class="show-products">
-
+    <style>
+        .show-products .box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
     <div class="box-container">
-
         <?php
         $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
         if(mysqli_num_rows($select_products) > 0){
             while($fetch_products = mysqli_fetch_assoc($select_products)){
+                $image_path = 'uploaded_img/' . $fetch_products['image'];
+                if (file_exists($image_path) && !empty($fetch_products['image'])) {
+                    $img_tag = '<img src="' . $image_path . '" alt="' . htmlspecialchars($fetch_products['name']) . '">';
+                } else {
+                    $img_tag = '<img src="uploaded_img/default_image.png" alt="default image">';
+                }
                 ?>
                 <div class="box">
-                    <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
-                    <div class="name"><?php echo $fetch_products['name']; ?></div>
-                    <div class="price">$<?php echo $fetch_products['price']; ?>/-</div>
+                    <?php echo $img_tag; ?>
+                    <div class="name"><?php echo htmlspecialchars($fetch_products['name']); ?></div>
+                    <div class="price">$<?php echo htmlspecialchars($fetch_products['price']); ?>/-</div>
                     <a href="admin_products.php?update=<?php echo $fetch_products['id']; ?>" class="option-btn">update</a>
                     <a href="admin_products.php?delete=<?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
                 </div>
                 <?php
             }
-        }else{
-            echo '<p class="empty">no products added yet!</p>';
+        } else {
+            echo '<p class="empty">No products added yet!</p>';
         }
         ?>
     </div>
-
 </section>
+
 
 <section class="edit-product-form">
 

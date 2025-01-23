@@ -1,15 +1,23 @@
 <?php
-if(isset($message)) {
-    foreach($message as $message) {
+if (isset($message) && is_array($message)) { // Sprawdzenie, czy $message istnieje i jest tablicą
+    foreach ($message as $msg) {
         echo '
         <div class="message">
-            <span>'.$message.'</span>
+            <span>' . htmlspecialchars($msg) . '</span>
             <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
         </div>
         ';
     }
+} elseif (isset($message)) { // Gdy $message nie jest tablicą, ale istnieje
+    echo '
+    <div class="message">
+        <span>' . htmlspecialchars($message) . '</span>
+        <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+    </div>
+    ';
 }
 ?>
+
 
 <header class="header">
 

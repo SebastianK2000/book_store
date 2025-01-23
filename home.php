@@ -58,27 +58,42 @@ if(isset($_POST['add_to_cart'])) {
 </section>
 
 <section class="products">
-
+    <style>
+        .products .box img {
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
     <h1 class="title">latest products</h1>
 
     <div class="box-container">
 
         <?php
         global $conn;
-        $section_products = mysqli_query($conn, "SELECT * FROM products LIMIT 6") or die('query failed');
+        $section_products = mysqli_query($conn, "SELECT * FROM products LIMIT 9") or die('query failed');
         if(mysqli_num_rows($section_products) > 0) {
             while($fetch_products = mysqli_fetch_assoc($section_products)) {
+                $image_path = 'uploaded_img/' . $fetch_products['image'];
+                if (file_exists($image_path) && !empty($fetch_products['image'])) {
+                    $img_tag = '<img src="' . $image_path . '" alt="' . htmlspecialchars($fetch_products['name']) . '">';
+                } else {
+                    $img_tag = '<img src="uploaded_img/default_image.png" alt="default image">';
+                }
                 ?>
-                <from action="" method="post" class="box">
-                    <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
-                    <div class="name"><?php echo $fetch_products['name']; ?></div>
-                    <div class="price"><?php echo $fetch_products['price']; ?>/-</div>
+                <form style="min-height: 500px" action="" method="post" class="box">
+                    <?php echo $img_tag; ?>
+                    <div class="name"><?php echo htmlspecialchars($fetch_products['name']); ?></div>
+                    <div class="price"><?php echo htmlspecialchars($fetch_products['price']); ?>/-</div>
                     <input type="number" min="1" name="product_quantity" value="1" class="qty">
-                    <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
-                    <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
-                    <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
-                    <input type="submit" value="add to card" name="add_to_cart" class="btn">
-                </from>
+                    <input type="hidden" name="product_name" value="<?php echo htmlspecialchars($fetch_products['name']); ?>">
+                    <input type="hidden" name="product_price" value="<?php echo htmlspecialchars($fetch_products['price']); ?>">
+                    <input type="hidden" name="product_image" value="<?php echo htmlspecialchars($fetch_products['image']); ?>">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                </form>
                 <?php
             }
         }else{
@@ -87,8 +102,8 @@ if(isset($_POST['add_to_cart'])) {
         ?>
 
     </div>
-
 </section>
+
 
 <section class="about">
 
