@@ -1,5 +1,5 @@
 <?php
-if (isset($message) && is_array($message)) { // Sprawdzenie, czy $message istnieje i jest tablicą
+if (isset($message) && is_array($message)) {
     foreach ($message as $msg) {
         echo '
         <div class="message">
@@ -8,7 +8,7 @@ if (isset($message) && is_array($message)) { // Sprawdzenie, czy $message istnie
         </div>
         ';
     }
-} elseif (isset($message)) { // Gdy $message nie jest tablicą, ale istnieje
+} elseif (isset($message)) {
     echo '
     <div class="message">
         <span>' . htmlspecialchars($message) . '</span>
@@ -25,7 +25,7 @@ if (isset($message) && is_array($message)) { // Sprawdzenie, czy $message istnie
         <div class="flex">
             <div class="share">
                 <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-x"></a>
                 <a href="#" class="fab fa-instagram"></a>
                 <a href="#" class="fab fa-linkedin"></a>
             </div>
@@ -35,7 +35,8 @@ if (isset($message) && is_array($message)) { // Sprawdzenie, czy $message istnie
 
     <div class="header-2">
         <div class="flex">
-            <a href="home.php" class="logo">Bookly.</a>
+            <a href="home.php" class="logo">
+                The Fable</a>
 
             <nav class="navbar">
                 <a href="home.php">home</a>

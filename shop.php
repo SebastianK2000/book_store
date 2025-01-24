@@ -52,7 +52,7 @@ if(isset($_POST['add_to_cart'])) {
     <p><a href="home.php">home</a> / shop </p>
 </div>
 
-<section class="products">
+<section class="products" style="margin-top: 3rem; margin-bottom: 3rem;">
 
     <style>
         .products .box img {

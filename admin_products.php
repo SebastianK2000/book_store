@@ -138,7 +138,7 @@ if(isset($_POST['update_product'])){
                     $img_tag = '<img src="uploaded_img/default_image.png" alt="default image">';
                 }
                 ?>
-                <div class="box">
+                <div class="box" style="min-height: 510px;">
                     <?php echo $img_tag; ?>
                     <div class="name"><?php echo htmlspecialchars($fetch_products['name']); ?></div>
                     <div class="price">$<?php echo htmlspecialchars($fetch_products['price']); ?>/-</div>

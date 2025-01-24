@@ -63,7 +63,7 @@ if(isset($_POST['send'])) {
     <p><a href="home.php">home</a> / contact </p>
 </div>
 
- <section class="contact">
+ <section class="contact" style="margin-top: 3rem; margin-bottom: 3rem;">
 
      <form action="" method="post">
          <h3>get in touch</h3>

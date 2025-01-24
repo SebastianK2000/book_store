@@ -62,6 +62,17 @@ if(isset($_POST['add_to_cart'])){
 
 <section class="products" style="padding-top: 0;">
 
+    <style>
+        .products .box img {
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+
     <div class="box-container">
         <?php
         if(isset($_POST['submit'])){
@@ -70,7 +81,7 @@ if(isset($_POST['add_to_cart'])){
             if(mysqli_num_rows($select_products) > 0){
                 while($fetch_product = mysqli_fetch_assoc($select_products)){
                     ?>
-                    <form action="" method="post" class="box">
+                    <form style="min-height: 540px" action="" method="post" class="box">
                         <img src="uploaded_img/<?php echo $fetch_product['image']; ?>" alt="" class="image">
                         <div class="name"><?php echo $fetch_product['name']; ?></div>
                         <div class="price">$<?php echo $fetch_product['price']; ?>/-</div>

@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
     --purple:#8e44ad;
-    --red:#c0392b;
+    --light-blue: #3f5b9f;
+    --red: #C1423AFF;
     --orange:#f39c12;
+    --dark-red: #8a0000;
     --black:#333;
     --white:#fff;
+    --dark-gray: #4b4a4a;
     --light-color:#666;
     --light-white:#ccc;
     --light-bg:#f5f5f5;
@@ -14,7 +16,7 @@
 }
 
 *{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -23,7 +25,7 @@
 }
 
 *::selection{
-    background-color: var(--purple);
+    background-color: var(--light-blue);
     color:var(--white);
 }
 
@@ -37,7 +39,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-    background-color: var(--purple);
+    background-color: var(--light-blue);
 }
 
 html{
@@ -86,7 +88,7 @@ section{
 
 .message span{
     font-size: 2rem;
-    color:var(--black);
+    color:var(--dark-gray);
 }
 
 .message i{
@@ -116,16 +118,16 @@ section{
 .btn:hover,
 .option-btn:hover,
 .delete-btn:hover{
-    background-color: var(--black);
+    background-color: var(--dark-gray);
 }
 
 .white-btn,
 .btn{
-    background-color: var(--purple);
+    background-color: var(--light-blue);
 }
 
 .option-btn{
-    background-color: var(--orange);
+    background-color: var(--light-blue);
 }
 
 .delete-btn{
@@ -168,7 +170,7 @@ section{
 }
 
 .header .flex .logo span{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .header .flex .navbar a{
@@ -178,7 +180,7 @@ section{
 }
 
 .header .flex .navbar a:hover{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .header .flex .icons div{
@@ -189,7 +191,7 @@ section{
 }
 
 .header .flex .icons div:hover{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .header .flex .account-box{
@@ -218,7 +220,7 @@ section{
 }
 
 .header .flex .account-box p span{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .header .flex .account-box .delete-btn{
@@ -232,7 +234,7 @@ section{
 }
 
 .header .flex .account-box div a{
-    color:var(--orange);
+    color:var(--dark-red);
 }
 
 .header .flex .account-box div a:hover{
@@ -270,7 +272,7 @@ section{
     margin-top: 1.5rem;
     padding:1.5rem;
     background-color: var(--light-bg);
-    color:var(--purple);
+    color:var(--light-blue);
     font-size: 2rem;
     border-radius: .5rem;
     border:var(--border);
@@ -407,7 +409,7 @@ section{
 }
 
 .orders .box-container .box p span{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .orders .box-container .box form{
@@ -451,7 +453,7 @@ section{
 }
 
 .users .box-container .box p span{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .users .box-container .box .delete-btn{
@@ -484,7 +486,7 @@ section{
 }
 
 .messages .box-container .box p span{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .messages .box-container .box .delete-btn{

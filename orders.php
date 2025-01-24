@@ -37,9 +37,9 @@ if(!isset($user_id)) {
 
 <section class="placed-orders">
 
-    <h1 class="title">placed orders</h1>
+    <h1 class="title" style="margin-top: 3rem;">placed orders</h1>
 
-    <div class="box-container">
+    <div class="box-container" style="margin-top: 3rem; margin-bottom: 3rem;">
 
         <?php
         $order_query = mysqli_query($conn, "SELECT * FROM `orders` WHERE user_id = '$user_id'") or die('query failed');

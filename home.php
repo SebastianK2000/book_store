@@ -57,7 +57,7 @@ if(isset($_POST['add_to_cart'])) {
 
 </section>
 
-<section class="products">
+<section class="products" style="margin-top: 3rem">
     <style>
         .products .box img {
             width: 100%;
@@ -68,7 +68,7 @@ if(isset($_POST['add_to_cart'])) {
             display: block;
         }
     </style>
-    <h1 class="title">latest products</h1>
+    <h1 class="title" style="margin-bottom: 3rem">latest products</h1>
 
     <div class="box-container">
 
@@ -108,7 +108,7 @@ if(isset($_POST['add_to_cart'])) {
     <a href="shop.php" class="option-btn">load more</a>
 </div>
 
-<section class="about">
+<section class="about" style="margin-bottom: 3rem; margin-top: 3rem">
 
     <div class="flex">
 

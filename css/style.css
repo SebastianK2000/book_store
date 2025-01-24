@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
     --purple:#8e44ad;
-    --red:#c0392b;
+    --light-blue: #3f5b9f;
+    --red: #C1423AFF;
+    --yellow: #ecc030;
     --orange:#f39c12;
+    --dark-red: #8a0000;
     --black:#333;
     --white:#fff;
+    --dark-gray: #4b4a4a;
     --light-color:#666;
     --light-white:#ccc;
     --light-bg:#f5f5f5;
@@ -14,7 +18,7 @@
 }
 
 *{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -23,7 +27,7 @@
 }
 
 *::selection{
-    background-color: var(--purple);
+    background-color: var(--light-blue);
     color:var(--white);
 }
 
@@ -37,7 +41,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-    background-color: var(--purple);
+    background-color: var(--light-blue);
 }
 
 html{
@@ -117,11 +121,11 @@ section{
 
 .white-btn,
 .btn{
-    background-color: var(--purple);
+    background-color: var(--light-blue);
 }
 
 .option-btn{
-    background-color: var(--orange);
+    background-color: var(--light-blue);
 }
 
 .delete-btn{
@@ -140,9 +144,9 @@ section{
     align-items: center;
     justify-content: center;
     gap:1rem;
-    background: url(../images/heading-bg.webp) no-repeat;
+    background: url(../images/heading-bg1.webp) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center calc(100% + 500px);
     text-align: center;
 }
 
@@ -158,7 +162,7 @@ section{
 }
 
 .heading p a{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .heading p a:hover{
@@ -215,7 +219,7 @@ section{
 }
 
 .form-container form p a{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .form-container form p a:hover{
@@ -263,7 +267,7 @@ section{
 }
 
 .header .header-1 .flex .share a:hover{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .header .header-1 .flex p{
@@ -272,7 +276,7 @@ section{
 }
 
 .header .header-1 .flex p a{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .header .header-1 .flex p a:hover{
@@ -281,7 +285,7 @@ section{
 
 .header .header-2 .flex .logo{
     font-size: 2.5rem;
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .header .header-2 .flex .navbar a{
@@ -291,7 +295,7 @@ section{
 }
 
 .header .header-2 .flex .navbar a:hover{
-    color:var(--purple);
+    color:var(--light-blue);
     text-decoration: underline;
 }
 
@@ -303,7 +307,7 @@ section{
 }
 
 .header .header-2 .flex .icons > *:hover{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 #menu-btn{
@@ -335,7 +339,7 @@ section{
 }
 
 .header .header-2 .flex .user-box p span{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .header .header-2 .flex .user-box .delete-btn{
@@ -344,7 +348,7 @@ section{
 
 .home{
     min-height: 70vh;
-    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home-bg.jpg) no-repeat;
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home-bg.webp) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -416,7 +420,7 @@ section{
     padding:1rem;
     font-size: 2.5rem;
     color:var(--white);
-    background-color: var(--red);
+    background-color: var(--orange);
 }
 
 .about .flex{
@@ -832,7 +836,7 @@ section{
 }
 
 .placed-orders .box-container .box p span{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 .search-form form{
@@ -894,12 +898,12 @@ section{
 
 .footer .box-container .box p i,
 .footer .box-container .box a i{
-    color:var(--purple);
+    color:var(--light-blue);
     padding-right: .5rem;
 }
 
 .footer .box-container .box a:hover{
-    color:var(--purple);
+    color:var(--light-blue);
     text-decoration: underline;
 }
 
@@ -913,7 +917,7 @@ section{
 }
 
 .footer .credit span{
-    color:var(--purple);
+    color:var(--light-blue);
 }
 
 

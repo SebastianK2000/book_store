@@ -54,10 +54,20 @@ if(isset($_GET['delete_all'])) {
 </div>
 
 <section class="shopping-cart">
+    <style>
+        .shopping-cart .box img {
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
 
-    <h1 class="title">product added</h1>
+    <h1 class="title" style="margin-top: 3rem; margin-bottom: 2rem;">product added</h1>
 
-    <div class="box-container">
+    <div class="box-container" style="margin-bottom: 3rem;">
         <?php
             $grand_total = 0;
             $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'")or die('query failed');
@@ -86,11 +96,11 @@ if(isset($_GET['delete_all'])) {
         ?>
     </div>
 
-    <div style="margin-top: 2rem; text-align:center;">
+    <div style="margin-top: 3rem; margin-bottom: 3rem; text-align:center;">
         <a href="cart.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');">delete all</a>
     </div>
 
-    <div class="cart-total">
+    <div class="cart-total" style="margin-bottom: 3rem;">
         <p>grand total : <span>$<?php echo $grand_total; ?>/-</span></p>
         <div class="flex">
             <a href="shop.php" class="option-btn">continue shopping</a>
