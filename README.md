@@ -1,5 +1,32 @@
 #book_store
 
+
+### Photos
+<details>
+
+![Zrzut ekranu 2025-01-27 193430](https://github.com/user-attachments/assets/e1065344-a362-4a98-a999-9b686c88e90f)
+
+![Zrzut ekranu 2025-01-27 193424](https://github.com/user-attachments/assets/cc988bfd-44fd-457d-b8a9-9150499ee1b9)
+
+![Zrzut ekranu 2025-01-27 193416](https://github.com/user-attachments/assets/6eb59750-b6b3-4d5f-a0a0-e2f2db29eb16)
+
+![Zrzut ekranu 2025-01-27 193406](https://github.com/user-attachments/assets/5a78a736-e37e-41ae-9760-d190079976f7)
+
+![Zrzut ekranu 2025-01-27 193349](https://github.com/user-attachments/assets/b24973b5-380a-47ba-b850-76e97ce114b6)
+
+![Zrzut ekranu 2025-01-27 193327](https://github.com/user-attachments/assets/0f4ff56a-4473-454f-8988-51f3f16b2e0d)
+
+![Zrzut ekranu 2025-01-27 193319](https://github.com/user-attachments/assets/25ab31aa-b497-46ad-84c0-737bf14519fa)
+
+
+https://github.com/user-attachments/assets/8eb4ae82-734b-430b-b413-db49ec27fc05
+
+
+
+</details>
+
+
+
 ### EN
 
 ### Description: 
